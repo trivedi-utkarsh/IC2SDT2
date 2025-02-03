@@ -14,12 +14,12 @@ import { tracks } from '@/components/homePage/Track_Pages/tracks/data';
 export default function CombinedTracks() {
   const themes = [
     {
-      name: "ADVANCED DATA ANALYTICS AND MINING",
+      name: "DATA ANALYTICS AND MINING",
       imageUrl: data_analytics,
       link: "#dataanalytics", // Use section IDs as links
     },
     {
-      name: "CRYPTOGRAPHY, CYBER SECURITY AND NETWORK SECURITY RESILIENCE",
+      name: "CRYPTOGRAPHY, CYBER SECURITY AND NETWORK SECURITY",
       imageUrl: cryptography,
       link: "#cryptography",
     },
@@ -29,7 +29,7 @@ export default function CombinedTracks() {
       link: "#cloudcomputing",
     },
     {
-      name: "ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING INNOVATIONS",
+      name: "ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING",
       imageUrl: ai,
       link: "#aiml",
     },
@@ -60,7 +60,7 @@ export default function CombinedTracks() {
               <h4 className="max-w-md text-4xl font-bold text-center mx-auto md:text-4xl md:text-left mb-6">
                   TRACKS
               </h4>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5 justify-center">
+          <div className="flex flex-wrap tracking-widest items-stretch gap-x-20 justify-center">
             {themes.map(function (theme, index) {
               return (
                 <Link key={index} href={theme.link} passHref>
