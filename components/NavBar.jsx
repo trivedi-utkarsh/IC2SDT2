@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import logo from "@/public/logonew.png";
+import logo from "@/public/ic2sdtlogo.PNG";
 import nitdLogo from "@/public/nitdel-logo.jpg"  
 import ieee from "@/public/ieee_logo.png"
 import Link from "next/link";
