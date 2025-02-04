@@ -17,6 +17,28 @@ import profile from "@/public/profile.png"
 import ckbirla from "@/public/new/ckbirla.jpg"
 // import satish from "@/assets/faculty/satish.jpg" 
 
+import AnukrKumar from "@/public/new/AnukrKumar.jpeg";
+import arjunrawat from "@/public/new/arjunrawat.jpeg";
+import Arunkhosla from "@/public/new/Arunkhosla.jpeg";
+import AwdehshKumarSingh from "@/public/new/AwdehshKumarSingh.jpeg";
+import Baljindersaini from "@/public/new/Baljindersaini.jpeg";
+import Dinesh from "@/public/new/Dinesh.jpeg";
+import Drbaluparne from "@/public/new/Drbaluparne.jpeg";
+import ManinderSingh from "@/public/new/ManinderSingh.jpeg";
+import MpSingh from "@/public/new/MpSingh.jpeg";
+import NamanGarg from "@/public/new/NamanGarg.jpeg";
+import NishantKumar from "@/public/new/NishantKumar.jpeg";
+import RkSharma from "@/public/new/RkSharma.jpeg";
+import Rajeevanchandel from "@/public/new/Rajeevanchandel.jpeg";
+import SandeepKumarSood from "@/public/new/SandeepKumarSood.jpeg";
+import shadhikanth from "@/public/new/shadhikanth.jpeg";
+import ShyamPrakash from "@/public/new/ShyamPrakash.jpeg";
+import dilbaghSingh from "@/public/new/dilbagSingh.jpg";
+import seema from "@/public/new/seema.jpg";
+import udaipratap from "@/public/new/udaipratap.png";
+import indusaini from "@/public/new/indusaini.jpg";
+
+
 import chaman from "@/assets/committee/international/Dr. Chaman Verma.png"
 import zoltan from "@/assets/committee/international/Dr. Zoltán Vámossy.jpg"
 import hiroyuki from "@/assets/committee/international/Prof. Hiroyuki Tsuda.jpg"
@@ -528,7 +550,7 @@ export const advisoryCommittee = [
                 name: 'Dr. Shashikant Ilager',
                 designation: 'Assistant Professor',
                 affiliation: { line1: 'Faculty of Science (Informatics Institute), University of Amsterdam (UvA), Netherlands', line2: '' },
-                photo: profile
+                photo: shadhikanth
             },
             {
                 name: 'Dr. Pradeep Kumar',
@@ -745,7 +767,7 @@ export const advisoryCommittee = [
                 name: 'Prof. Dinesh K. Vishwakarma',
                 designation: 'Professor',
                 affiliation: { line1: 'Dept of IT, DTU, Delhi', line2: '' },
-                photo: profile
+                photo: Dinesh
             },
             {
                 name: 'Prof. Jitender Kumar Chhabra',
@@ -793,7 +815,7 @@ export const advisoryCommittee = [
                 name: 'Dr. Sandeep Kumar Sood',
                 designation: 'Associate Professor and Head',
                 affiliation: { line1: 'Dept of CA, NIT Kurukshetra', line2: '' },
-                photo: profile
+                photo: SandeepKumarSood
             },
             {
                 name: 'Dr. Ankur Bansal',
@@ -1027,7 +1049,7 @@ export const technicalCommitee = [
                 name: 'Prof. Dilbagh Singh',
                 designation: 'Professor',
                 affiliation: { line1: 'Department of ICE, NIT Jalandhar', line2: '' },
-                photo: profile
+                photo: dilbaghSingh
             },
         ]
     },
@@ -1039,7 +1061,7 @@ export const technicalCommitee = [
                 name: 'Prof. Seema Bawa',
                 designation: 'Professor',
                 affiliation: { line1: 'Dept of CSE, TIET patiala', line2: '' },
-                photo: profile
+                photo: seema
             },
         ]
     },
@@ -1050,7 +1072,7 @@ export const technicalCommitee = [
                 name: 'Prof. Arun Khosla',
                 designation: 'Professor',
                 affiliation: { line1: 'Dept of ECE, NIT Jalandhar', line2: '' },
-                photo: profile
+                photo: Arunkhosla
             },
             {
                 name: 'Prof. Rajesh Kumar Aggarwal',
@@ -1062,7 +1084,7 @@ export const technicalCommitee = [
                 name: 'Prof. Rajeevan Chandel',
                 designation: 'Professor',
                 affiliation: { line1: 'Dept of ECE, NIT Hamirpur', line2: '' },
-                photo: profile
+                photo: Rajeevanchandel
             },
             {
                 name: 'Prof. Savita Gupta',
@@ -1074,19 +1096,19 @@ export const technicalCommitee = [
                 name: 'Prof. Baljinder Saini',
                 designation: 'Professor',
                 affiliation: { line1: 'Dept of EEE, NIT Jalandhar', line2: '' },
-                photo: profile
+                photo: Baljindersaini
             },
             {
                 name: 'Prof. R. K. Sharma',
                 designation: 'Professor',
                 affiliation: { line1: 'Dept of ECE, NIT Kurukshetra', line2: '' },
-                photo: profile
+                photo: RkSharma
             },
             {
-                name: 'Prof. Maninder Singh', // here
+                name: 'Prof. Maninder Singh', 
                 designation: 'Professor',
                 affiliation: { line1: 'Dept of CSE, TIET Patiala', line2: '' },
-                photo: profile
+                photo: ManinderSingh
             },
             {
                 name: 'Prof. Rohit Mehra',
@@ -1110,13 +1132,13 @@ export const technicalCommitee = [
                 name: 'Prof. Awadhesh Kumar Singh',
                 designation: 'Professor',
                 affiliation: { line1: 'Dept of CE, NIT Kurukshetra', line2: '' },
-                photo: profile
+                photo: AwdehshKumarSingh
             },
             {
                 name: 'Prof. M. P. Singh',
                 designation: 'Professor',
                 affiliation: { line1: 'Dept of CSE, NIT Patna', line2: '' },
-                photo: profile
+                photo: MpSingh
             },
             {
                 name: 'Prof. Renu Dhir',
@@ -1149,10 +1171,10 @@ export const technicalCommitee = [
                 photo: rajneeshrani
             },
             {
-                name: 'Dr. Uday Pratap Roy',
+                name: 'Dr. Udai Pratap Roy',
                 designation: 'Associate Professor',
                 affiliation: { line1: 'Dept of CSE, NIT Patna', line2: '' },
-                photo: profile
+                photo: udaipratap
             },
             {
                 name: 'Dr. Rikmantra Basu',
@@ -1194,7 +1216,7 @@ export const technicalCommitee = [
                 name: 'Dr. Balu Parne',
                 designation: 'Assistant Professor',
                 affiliation: { line1: 'Dept of CSE, NIT Surat', line2: '' },
-                photo: profile
+                photo: Drbaluparne
             },
             {
                 name: 'Dr. Damanjit Kaur',
@@ -1224,7 +1246,7 @@ export const technicalCommitee = [
                 name: 'Dr. Nishant Kumar',
                 designation: 'Assistant Professor',
                 affiliation: { line1: 'Dept of EE, IIT Jodhpur', line2: '' },
-                photo: profile
+                photo: NishantKumar
             },
             {
                 name: 'Dr. Banhi Sanyal',
@@ -1260,7 +1282,7 @@ export const technicalCommitee = [
                 name: 'Dr. Shyam Prakash Choudhary',
                 designation: 'Assistant Professor',
                 affiliation: { line1: 'Dept of CSE, NIT Andhra Pradesh', line2: '' },
-                photo: profile
+                photo: ShyamPrakash
             },
             {
                 name: 'Dr. Rajeev Kumar',
@@ -1272,7 +1294,7 @@ export const technicalCommitee = [
                 name: 'Dr. Indu Saini',
                 designation: 'Assistant Professor',
                 affiliation: { line1: 'Department of ECE, NIT Jalandhar', line2: '' },
-                photo: profile
+                photo: indusaini
             },
             {
                 name: 'Dr. D. Vaithiyanathan',
@@ -1586,7 +1608,7 @@ export const organizingCommittee = [
             // },
             {
                 name: 'Dr. Karan Verma',
-                designation: 'HoD',
+                designation: 'Associate Professor',
                 affiliation: { line1: 'Dept of CSE, NIT Delhi', line2: '' },
                 photo: karan
             },
@@ -1660,7 +1682,7 @@ export const organizingCommittee = [
                 name: 'Dr. Arjun Singh Rawat',
                 designation: 'Assistant Professor',
                 affiliation: { line1: 'Dept. of CSE,NIT Delhi', line2: '' },
-                photo: profile
+                photo: arjunrawat
             },
             {
                 name: 'Dr. Preeti Mehta',
@@ -1703,7 +1725,7 @@ export const financeCommittee = [
                 name: 'Dr. Arjun Singh Rawat',
                 designation: 'Assistant Professor',
                 affiliation: { line1: 'Dept. of CSE,NIT Delhi', line2: '' },
-                photo: profile
+                photo: arjunrawat
             },
         ]
     }
@@ -1753,7 +1775,7 @@ export const publicationCommittee = [
                 name: 'Dr.Ankur Kumar',
                 designation:'Assistant Professor',
                 affiliation: { line1: 'School of Electronics, IIIT Una', line2: '' },
-                photo: profile
+                photo: AnukrKumar
             },
             {
                 name: 'Dr. Shefali',
@@ -1837,7 +1859,7 @@ export const publicityCommittee = [
                 name: 'Dr. Naman Garg',
                 designation: 'Assistant Professor',
                 affiliation: { line1: 'School of Electronics, IIIT Una', line2: '' },
-                photo: profile
+                photo: NamanGarg
             },
         ]
     }
@@ -1874,7 +1896,7 @@ export const hospitalityCommittee = [
                 name: 'Dr. Arjun Singh Rawat',
                 designation: 'Assistant Professor',
                 affiliation: { line1: 'Dept of CSE, NIT Delhi', line2: '' },
-                photo: profile
+                photo: arjunrawat
             },
             {
                 name: 'Dr. Urvashi',
@@ -1928,7 +1950,7 @@ export const webDevelopmentContentCreationCommittee = [
                 name: 'Dr. Arjun Singh Rawat',
                 designation: 'Assistant Professor',
                 affiliation: { line1: 'Dept of CSE, NIT Delhi', line2: '' },
-                photo: profile
+                photo: arjunrawat
             },
             {
                 name: 'Dr. Preeti Mehta',
