@@ -1,12 +1,8 @@
-import profile from '@/public/profile.png'
-import abdulAnsari from '@/public/keynote/abdulAnsari.jpg'
-import selvaKumar from '@/public/keynote/selvaKumar.jpg'
-import sharmaChakraborty from '@/public/keynote/sharmaChakraborty.jpg'
-import manindraAgarwal from '@/public/keynote/manindraAgarwal.jpg'
-import moinUddin from '@/public/keynote/moinUddin.jpg'
 import manojMishra from '@/public/keynote/manojMishra.jpg'
-import Binod from "@/assets/committee/national/Prof. Binod Kumar Kanaujia.jpg"
-
+import sharmaChakraborty from '@/public/keynote/sharmaChakraborty.jpg'
+import prateeksharma from "@/public/new/prateeksharma.jpeg"
+import xiaozhi from "@/public/new/xiaozhi.jpg"
+import yogeshsingh from "@/public/new/yogeshsingh.jpg"
 
 export const keynote = {
     
@@ -28,19 +24,19 @@ export const keynote = {
         title: "Prof. Yogesh Singh",
         designation: "Vice-Chancellor",
         description: "Delhi University, India",
-        image: profile
+        image: yogeshsingh
       },
       Xiao : {
         title: "Prof. Xiao-Zhi Gao",
         designation: "Professor",
         description: "University of Eastern Finland, Finland",
-        image: profile,
+        image: xiaozhi,
       },
       Prateek : {
         title: "Prof. Prateek Sharma",
         designation: "Vice-Chancellor",
         description: "Delhi Technological University, India",
-        image: profile,
+        image: prateeksharma,
       },
     // Selvakumar : {
     //     title: "Prof. S. Selvakumar",
