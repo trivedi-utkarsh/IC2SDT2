@@ -24,10 +24,10 @@ export default function Footer() {
           </div>
           <div className="flex flex-col ml-6">
             <h3 className="text-2xl font-semibold">Contact Us</h3>
-            <p><a href="mailto:sahil.neelam@nitdelhi.ac.in" className="text-blue-500">sahil.neelam@nitdelhi.ac.in</a></p>
-            <p><a href="mailto:gautam@nitdelhi.ac.in" className="text-blue-500">gautam@nitdelhi.ac.in</a></p>
-            <p><a href="mailto:gunjan.rehani@nitdelhi.ac.in" className="text-blue-500">gunjan.rehani@nitdelhi.ac.in</a></p>
-            <p><a href="mailto:amandeepk@nitdelhi.ac.in" className="text-blue-500">amandeepk@nitdelhi.ac.in</a></p>
+            <p><a href="mailto:amandeepk@nitdelhi.ac.in" className="text-blue-500">Dr. Amandeep</a></p>
+            <p><a href="mailto:gunjan.rehani@nitdelhi.ac.in" className="text-blue-500">Dr. Gunjan</a></p>
+            <p><a href="mailto:gautam@nitdelhi.ac.in" className="text-blue-500">Dr. Gautam</a></p>
+            <p><a href="mailto:sahil.neelam@nitdelhi.ac.in" className="text-blue-500">Dr. Sahil</a></p>
           </div>
         </div>
         <div>
