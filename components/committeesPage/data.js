@@ -14,6 +14,7 @@ import karan from "@/assets/faculty/karan_verma.jpg"
 import rishav from "@/assets/faculty/Rishav-singh.jpg"
 import shelly from "@/assets/faculty/SHALLY.png"
 import profile from "@/public/profile.png"
+import ckbirla from "@/public/new/ckbirla.jpg"
 // import satish from "@/assets/faculty/satish.jpg" 
 
 import chaman from "@/assets/committee/international/Dr. Chaman Verma.png"
@@ -147,6 +148,17 @@ export const cheifPatron = [
     //         },
     //     ]
     // },
+    {
+        type: 'CHIEF-PATRON',
+        members: [
+            {
+                name: 'Mr. C. K. Birla',
+                designation: 'Chairperson',
+                affiliation: { line1: 'Board of Governors, NIT Delhi', line2: '' },
+                photo: ckbirla
+            },
+        ]
+    },
     {
         type: 'GENERAL CHAIR',
         members: [
@@ -1257,10 +1269,10 @@ export const technicalCommitee = [
                 photo: rajeevkumar
             },
             {
-                name: 'Dr. Indu Joshi',
+                name: 'Dr. Indu Saini',
                 designation: 'Assistant Professor',
-                affiliation: { line1: 'School of Computing & Electrical Engineering, IIT Mandi', line2: '' },
-                photo: indu
+                affiliation: { line1: 'Department of ECE, NIT Jalandhar', line2: '' },
+                photo: profile
             },
             {
                 name: 'Dr. D. Vaithiyanathan',
@@ -1566,12 +1578,12 @@ export const organizingCommittee = [
                 affiliation: { line1: 'Dept of CSE, NIT Delhi', line2: '' },
                 photo: shelly
             },
-            {
-                name: 'Dr. Anurag Singh',
-                designation: 'Associate Professor',
-                affiliation: { line1: 'Dept of CSE, NIT Delhi', line2: '' },
-                photo: anurag
-            },
+            // {
+            //     name: 'Dr. Anurag Singh',
+            //     designation: 'Associate Professor',
+            //     affiliation: { line1: 'Dept of CSE, NIT Delhi', line2: '' },
+            //     photo: anurag
+            // },
             {
                 name: 'Dr. Karan Verma',
                 designation: 'HoD',
@@ -1632,18 +1644,18 @@ export const organizingCommittee = [
                 affiliation: { line1: 'Dept of ECE, NIT Delhi', line2: '' },
                 photo: jaspinder
             },
-            {
-                name: 'Dr. Parnika Bhatt',
-                designation: 'Postdoctoral Fellow',
-                affiliation: { line1: 'Dept. of CSE,NIT Delhi', line2: '' },
-                photo: profile
-            },
-            {
-                name: 'Dr. Vishal Gupta',
-                designation: 'Assistant Professor',
-                affiliation: { line1: 'Dept. of CSE,NIT Delhi', line2: '' },
-                photo: profile
-            },
+            // {
+            //     name: 'Dr. Parnika Bhatt',
+            //     designation: 'Postdoctoral Fellow',
+            //     affiliation: { line1: 'Dept. of CSE,NIT Delhi', line2: '' },
+            //     photo: profile
+            // },
+            // {
+            //     name: 'Dr. Vishal Gupta',
+            //     designation: 'Assistant Professor',
+            //     affiliation: { line1: 'Dept. of CSE,NIT Delhi', line2: '' },
+            //     photo: profile
+            // },
             {
                 name: 'Dr. Arjun Singh Rawat',
                 designation: 'Assistant Professor',
@@ -1673,7 +1685,7 @@ export const financeCommittee = [
         ]
     },
     {
-        type: 'CO-CHAIR',
+        type: 'MEMBERS',
         members : [
             {
                 name: 'Dr. Gautam Kumar',
@@ -1711,7 +1723,7 @@ export const publicationCommittee = [
     },
     {
 
-        type: 'CO-CHAIR(S)',
+        type: 'MEMBERS',
         members : [
             // {
             //     name: 'Dr. Nonita Sharma',
@@ -1783,7 +1795,7 @@ export const publicityCommittee = [
         ]
     },
     {
-        type: 'CO-CHAIR(S)',
+        type: 'MEMBERS',
         members : [
             // {
             //     name: 'Dr. Shelly Sachdeva',
@@ -1844,7 +1856,7 @@ export const hospitalityCommittee = [
         ]
     },
     {
-        type: 'CO-CHAIR(S)',
+        type: 'MEMBERS',
         members : [ 
             {
                 name: 'Dr. Gunjan',
@@ -1904,7 +1916,7 @@ export const webDevelopmentContentCreationCommittee = [
         ]
     },
     {
-        type: 'CO-CHAIR(S)',
+        type: 'MEMBERS',
         members : [
             {
                 name: 'Dr. Amandeep Kaur',
