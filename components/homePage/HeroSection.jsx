@@ -16,13 +16,14 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 
+import bg6 from "@/public/banners/4.png";
 import bg1 from "@/public/banners/6.png";
 import bg2 from "@/public/banners/7.png";
 import bg3 from "@/public/banners/8.png";
 import bg4 from "@/public/banners/9.png";
 import bg5 from "@/public/banners/10.png";
 
-const sliderImages = [bg1, bg2, bg3, bg4, bg5];
+const sliderImages = [bg6, bg1, bg2, bg3, bg4, bg5];
 
 export default function HeroSection() {
   return (
