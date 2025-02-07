@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import CountdownTimer from "./CountdownTimer";
@@ -8,11 +9,25 @@ import styles from './AddressCard.module.css';
 import './CountdownTimer.css';
 import ImportantDates from "./ImportantDates";
 import { dates } from "./data";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+
+import bg1 from "@/public/banners/6.png";
+import bg2 from "@/public/banners/7.png";
+import bg3 from "@/public/banners/8.png";
+import bg4 from "@/public/banners/9.png";
+import bg5 from "@/public/banners/10.png";
+
+const sliderImages = [bg1, bg2, bg3, bg4, bg5];
 
 export default function HeroSection() {
   return (
     <>
-      <section
+      {/* <section
         className="bg-no-repeat bg-cover relative"
         id="hero"
         style={{
@@ -28,7 +43,7 @@ export default function HeroSection() {
                 width={256}
                 quality={100}
                 priority
-              /> */}
+              /> }
               <div className="flex flex-col mx-auto md:mx-0">
                 <p className="font-bold text-4xl text-center md:text-5xl">
                   2<sup>nd</sup> 
@@ -59,7 +74,7 @@ export default function HeroSection() {
                 </p>
                 {/* <p className="text-2xl text-center md:text-3xl">
                     Coming Soon
-                </p> */}
+                </p> }
               </div>
             </div>
             <div className="flex justify-center">
@@ -68,7 +83,7 @@ export default function HeroSection() {
               <Link href="/register"
                   className="p-3 pt-3 text-xl uppercase text-primary05 bg-gray-400 rounded-full baseline md:block px-6 disabled">Registration Closed
               </Link>
-            </div> */}
+            </div> }
           </div>
         </div>
           <div className={styles.addressCard}>
@@ -81,6 +96,67 @@ export default function HeroSection() {
               </p>
             </div>
           </div><br />
+      </section> */}
+      {/* <section className="relative w-full h-[500px]">
+        <Swiper
+          modules={[Autoplay, Navigation, Pagination]}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          loop={true}
+          navigation
+          pagination={{ clickable: true }}
+          className="w-full h-full"
+        >
+          <SwiperSlide>
+            <img
+              src = "../../public/banners/6.png"
+              alt="Slide 1"
+              className="w-full h-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="/background2.jpg"
+              alt="Slide 2"
+              className="w-full h-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="/background3.jpg"
+              alt="Slide 3"
+              className="w-full h-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="/background4.jpg"
+              alt="Slide 4"
+              className="w-full h-full object-cover"
+            />
+          </SwiperSlide>
+        </Swiper>
+      </section> */}
+      <section className="relative w-full h-[500px]">
+        <Swiper
+          modules={[Autoplay, Navigation, Pagination]}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          loop={true}
+          navigation
+          pagination={{ clickable: true }}
+          className="w-full h-full"
+        >
+          {sliderImages.map((image, index) => (
+            <SwiperSlide key={index}>
+              <Image
+                src={image}
+                alt={`Slide ${index + 1}`}
+                layout="fill"
+                objectFit="cover"
+                priority
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </section>
       <ImportantDates></ImportantDates>
     </>

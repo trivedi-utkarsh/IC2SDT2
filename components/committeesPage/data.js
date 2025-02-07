@@ -93,7 +93,7 @@ import Amandeepkaur from "@/public/new/Amandeepkaur.jpg"
 import amitmahajan from "@/public/new/amitmahajan.jpg"
 import AnkurBansal from "@/public/new/AnkurBansal.jpg"
 import arunsharma from "@/public/new/arunsharma.jpg"
-import ashishkumar from "@/public/new/ashishkumar.jpg"
+import ashishkumar from "@/public/new/ashishkumar2.jpg"
 import banhisanyal from "@/public/new/banhisanyal.jpeg"
 import brahmjit from "@/public/new/brahmjit.jpg"
 //import chaman from "@/public/new/chaman.jpg";
@@ -174,7 +174,7 @@ export const cheifPatron = [
         type: 'CHIEF-PATRON',
         members: [
             {
-                name: 'Mr. C. K. Birla',
+                name: 'Shri C. K. Birla',
                 designation: 'Chairperson',
                 affiliation: { line1: 'Board of Governors, NIT Delhi', line2: '' },
                 photo: ckbirla
@@ -208,7 +208,7 @@ export const cheifPatron = [
         members: [
             {
                 name: 'Prof. (Dr.) Geeta Sikka',
-                designation: 'Dean Academics',
+                designation: 'Professor and Dean (Academics)',
                 affiliation: { line1: 'NIT Delhi', line2: '' },
                 photo: geeta
             },
@@ -433,33 +433,33 @@ export const advisoryCommittee = [
         type: "INTERNATIONAL ADVISORY COMMITTEE",
         members: [
             {
-                name: 'Dr. Bharat K. Bhargava',
+                name: 'Prof. Bharat K. Bhargava',
                 designation: 'Professor',
-                affiliation: { line1: 'Dept. of Computer Science ,Purdue University, USA', line2: '' },
+                affiliation: { line1: 'Dept. of Computer Science, Purdue University, USA', line2: '' },
                 photo: Bhargava
             },
             {
                 name: 'Prof. Vijay Kumar',
                 designation: 'School of Computing and Engineering',
-                affiliation: { line1: 'University of Missouri-Kansas City,USA', line2: '' },
+                affiliation: { line1: 'University of Missouri-Kansas City, USA', line2: '' },
                 photo: Vijaykumar
             },
             {
                 name: 'Prof. Upendranath Sharma Chakravarthy',
                 designation: 'Professor',
-                affiliation: { line1: 'Computer Science,University of Texas Arlington', line2: '' },
+                affiliation: { line1: 'Computer Science, University of Texas Arlington', line2: '' },
                 photo: upendrasharma
             },
             {
                 name: 'Prof. Xiao-Zhi Gao',
                 designation: 'Professor',
-                affiliation: { line1: 'University of Eastern Finland,Finland', line2: '' },
+                affiliation: { line1: 'University of Eastern Finland, Finland', line2: '' },
                 photo: xiaozhi
             },
             {
                 name: 'Prof. Sanjay Madria',
                 designation: 'Professor,',
-                affiliation: { line1: 'Computer Science Department,Missouri University of Science and Technology,USA', line2: '' },
+                affiliation: { line1: 'Computer Science Department, Missouri University of Science and Technology, USA', line2: '' },
                 photo: SanjayMadria
             },
             {
@@ -471,13 +471,13 @@ export const advisoryCommittee = [
             {
                 name: 'Prof. Mohan Lal Kolhe',
                 designation: 'Professor',
-                affiliation: { line1: 'Faculty of Engineering and Science, University of Agder, Norway', line2: '' },
+                affiliation: { line1: 'Faculty of Engineering and Science at University of Agder, Norway', line2: '' },
                 photo: mohanlal
             },
             {
                 name: 'Prof. Leandro Melo de Sales',
                 designation: 'Professor',
-                affiliation: { line1: 'Institute of Computing (IC), Federal University of Alagoas (UFAL), Brazil', line2: '' },
+                affiliation: { line1: 'Institute of Computing (IC) at Federal University of Alagoas (UFAL), Brazil', line2: '' },
                 photo: leandro
             },
             {
@@ -512,8 +512,8 @@ export const advisoryCommittee = [
             },
             {
                 name: 'Ms. Vipin Luthra',
-                designation: 'Director, Digital and Technology',
-                affiliation: { line1: 'Diageo', line2: '' },
+                designation: 'Director',
+                affiliation: { line1: 'Digital and Technology, Diageo', line2: '' },
                 photo: vipin
             },
             {
@@ -561,7 +561,7 @@ export const advisoryCommittee = [
             {
                 name: 'Dr. Chaman Verma',
                 designation: 'Assistant Professor',
-                affiliation: { line1: 'Eötvös Loránd University, Budapest, Hungary', line2: '' },
+                affiliation: { line1: 'EötvösLoránd University, Budapest, Hungary', line2: '' },
                 photo: chaman
             },
             {
@@ -1606,12 +1606,12 @@ export const organizingCommittee = [
             //     affiliation: { line1: 'Dept of CSE, NIT Delhi', line2: '' },
             //     photo: anurag
             // },
-            {
-                name: 'Dr. Karan Verma',
-                designation: 'Associate Professor',
-                affiliation: { line1: 'Dept of CSE, NIT Delhi', line2: '' },
-                photo: karan
-            },
+            // {
+            //     name: 'Dr. Karan Verma',
+            //     designation: 'Associate Professor',
+            //     affiliation: { line1: 'Dept of CSE, NIT Delhi', line2: '' },
+            //     photo: karan
+            // },
             // {
             //     name: 'Dr. Chandra Prakash',
             //     designation: 'Assistant Professor',
@@ -1661,10 +1661,10 @@ export const organizingCommittee = [
                 photo: divya
             },
             {
-                name: 'Dr. Japinder Kaur',
+                name: 'Dr. Jaspinder Kaur',
                 designation: 'Postdoctoral Fellow',
                 affiliation: { line1: 'Dept of ECE, NIT Delhi', line2: '' },
-                photo: jaspinder
+                photo: jaspinder 
             },
             // {
             //     name: 'Dr. Parnika Bhatt',
@@ -1828,7 +1828,7 @@ export const publicityCommittee = [
             {
                 name: 'Dr. Arshpreet Kaur',
                 designation: 'Assistant Professor',
-                affiliation: { line1: 'Alliance University', line2: '' },
+                affiliation: { line1: 'Amity University, Bangalore', line2: '' },
                 photo: Arshpreet
             },
             // {
@@ -1966,7 +1966,7 @@ export const webDevelopmentContentCreationCommittee = [
             },
             {
                 name: 'Dr. Ashish Kumar',
-                designation: 'Assistant Professor',
+                designation: 'Associate Professor',
                 affiliation: { line1: 'SoCSE, Bennet University Greater Noida', line2: '' },
                 photo: ashishkumar
             }
