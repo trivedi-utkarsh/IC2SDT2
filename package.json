@@ -10,10 +10,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "lucide-react": "^0.475.0",
     "moment": "^2.29.4",
     "next": "^15.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-spring": "^9.7.5",
     "sharp": "^0.33.5",
     "slider": "^1.0.4",
     "swiper": "^11.2.2"

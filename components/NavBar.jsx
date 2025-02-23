@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import logo from "@/public/ic2sdtlogo.PNG";
+import logo from "@/public/newnewlogo.png";
 import nitdLogo from "@/public/nitdel-logo.jpg"  
 import ieee from "@/public/ieee_logo.png"
 import Link from "next/link";
@@ -116,10 +116,10 @@ function ConferenceHeader({open, setOpen}) {
                               className="p-3 my-auto px-6 pt-2 text-white bg-gray-400 rounded-full baseline"
                         >Registration Closed</Link>
                     </div> */}
-                    {/* <a href="https://ewh.ieee.org/r10/delhi/" target="_blank">
+                    <a href="https://ewh.ieee.org/r10/delhi/" target="_blank">
                         <Image src={ieee} className="object-contain" alt="G20" height={70} quality={100}/>
                     </a>
-                    <a href="https://www.drdo.gov.in/drdo/" target="_blank">
+                    {/*<a href="https://www.drdo.gov.in/drdo/" target="_blank">
                         <Image src={drdo} className="object-contain" alt="G20" height={84} quality={100}/>
                     </a>
                     <a href="https://serb.gov.in/" target="_blank">
