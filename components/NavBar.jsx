@@ -39,6 +39,7 @@ function NavRibbon({ open, toggleTracksMenu }) {
         {name: "Speakers", link: "/speakers"},
         {name: "Committees", link: "/committees"},
         {name: "Supporter", link: "/sponsors"},
+        //{name: "Previous Edition", link: "/previous"},
         // {name: "Registration", link: "#"},
        //{name: "Contact Us", link: "/contact"},
         
