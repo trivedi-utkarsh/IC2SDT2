@@ -1069,12 +1069,6 @@ export const technicalCommitee = [
         type : 'COMMITTEE MEMBERS',
         members: [
             {
-                name: 'Dr. Indu Saini',
-                designation: 'Associate Professor',
-                affiliation: { line1: 'Department of ECE, NIT Jalandhar', line2: '' },
-                photo: indusaini
-            },
-            {
                 name: 'Prof. Arun Khosla',
                 designation: 'Professor',
                 affiliation: { line1: 'Dept of ECE, NIT Jalandhar', line2: '' },
@@ -1163,6 +1157,12 @@ export const technicalCommitee = [
                 designation: 'Professor',
                 affiliation: { line1: 'Dept of ICE, NIT Jalandhar', line2: '' },
                 photo: sharvan
+            },
+            {
+                name: 'Dr. Indu Saini',
+                designation: 'Associate Professor',
+                affiliation: { line1: 'Department of ECE, NIT Jalandhar', line2: '' },
+                photo: indusaini
             },
             {
                 name: 'Dr. Geeta Pratap',

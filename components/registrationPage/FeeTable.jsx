@@ -1,230 +1,68 @@
-import indian_flag from 'assets/indian.png'
-import regis_from from 'assets/form.png'
-import Image from "next/image";
+import indian_flag from 'assets/indian.png';
+import Image from 'next/image';
 
-export default function FeeTable(){
-
-    return(
-        <div>
-                   <div className="container mx-auto px-12 sm:px-6 py-4 bg-indigo-200">
-          
-          <div className="flex items-center space-x-4">
-          <h2 className="text-2xl font-bold my-8"> Registration Fee for Indian Delegates </h2>
-          <Image src={indian_flag} height={16} width={32}/>
-          </div>
-        <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-          <thead className="text-xs text-gray-700 uppercase dark:text-gray-400">
-            <tr>
-              <th scope="col" className="px-6 py-3 ">
-              </th>
-              <th colSpan={2} scope="col" className="text-xl font-black text-gray-900 text-center px-6 py-5">
-                {/* Regular Registration <br /> */}
-                {/* <span className="text-red-500">(02-26 July 2024)</span> */}
-              </th>
-              {/* <th colSpan={2} scope="col" className="text-xl font-black text-gray-900 text-center px-6 py-5">
-                Late Registration  <br />
-                <span className="text-red-500">(15-20 July 2024)</span>
-              </th> */}
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="border-b border-gray-200 ">
-              <th scope="row" className="px-6 py-4 font-medium text-gray-900  dark:text-white ">
-              </th>
-              <td className="text-xl font-black text-blue-700 px-6 py-4">
-                IEEE Members
-              </td>
-              <td className="text-xl font-black text-blue-700 px-6 py-4 bg-gray-200 ">
-                Non-IEEE Members
-              </td>
-              {/* <td className="text-xl font-black text-blue-700 px-6 py-4">
-                IEEE Members
-              </td>
-              <td className="text-xl font-black text-blue-700 px-6 py-4 bg-gray-200 ">
-                Non-IEEE Members
-              </td> */}
-            </tr>
-            <tr className="border-b border-gray-200 ">
-              <th scope="row" className="text-base font-black text-gray-900 px-6 py-4 font-medium text-gray-900  dark:text-white ">
-                Student (UG/ PG/ PhD)
-              </th>
-              <td className="text-base font-black text-gray-900 px-6 py-4">
-                ₹ 9000
-              </td>
-              <td className="text-base font-black text-gray-900 px-6 py-4 bg-gray-200 ">
-                ₹ 10000
-              </td>
-              {/* <td className="text-base font-black text-gray-900 px-6 py-4">
-                ₹ 6500
-              </td>
-              <td className="text-base font-black text-gray-900 px-6 py-4 bg-gray-200 ">
-                ₹ 9000
-              </td> */}
-            </tr>
-            <tr className="border-b border-gray-200 ">
-              <th scope="row" className="text-base font-black text-gray-900 px-6 py-4 font-medium text-gray-900  dark:text-white ">
-                Academician/ Industrial Professionals
-              </th>
-              <td className="text-base font-black text-gray-900 px-6 py-4">
-                ₹ 10000
-              </td>
-              <td className="text-base font-black text-gray-900 px-6 py-4 bg-gray-200 ">
-                ₹ 11000
-              </td>
-              {/* <td className="text-base font-black text-gray-900 px-6 py-4">
-                ₹ 8500
-              </td>
-              <td className="text-base font-black text-gray-900 px-6 py-4 bg-gray-200 ">
-                ₹ 10,000
-              </td> */}
-            </tr>
-            <tr className="border-b border-gray-200 ">
-              <th scope="row" className="text-base font-black text-gray-900 px-6 py-4 font-medium text-gray-900  dark:text-white ">
-                Attendees
-              </th>
-              <td className="text-base font-black text-gray-900 px-6 py-4">
-                ₹ 5000
-              </td>
-              <td className="text-base font-black text-gray-900 px-6 py-4 bg-gray-200 ">
-                ₹ 6000
-              </td>
-              {/* <td className="text-base font-black text-gray-900 px-6 py-4">
-                ₹ 3500
-              </td>
-              <td className="text-base font-black text-gray-900 px-6 py-4 bg-gray-200 ">
-                ₹ 4500
-              </td> */}
-            </tr>
-            {/* <tr>
-              <th scope="row" className="text-base font-black text-gray-900 px-6 py-4 font-medium text-gray-900  dark:text-white ">
-                Professional Attendees
-              </th>
-              <td className="text-base font-black text-gray-900 px-6 py-4">
-                ₹ 3000
-              </td>
-              <td className="text-base font-black text-gray-900 px-6 py-4 bg-gray-200 ">
-                ₹ 4000
-              </td>
-              {/* <td className="text-base font-black text-gray-900 px-6 py-4">
-                ₹ 4000
-              </td>
-              <td className="text-base font-black text-gray-900 px-6 py-4 bg-gray-200 ">
-                ₹ 5000
-              </td> }
-            </tr> */}
-          </tbody>
-        </table>
-      </div>
-
-      <br /> <br />
-
-      <div className="container mx-auto px-12 sm:px-6 py-4 bg-indigo-300">
-        <h2 className="text-2xl font-bold my-8">
-          Registration Fee for International Delegates
-        </h2>
-        <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-          <thead className="text-xs text-gray-700 uppercase dark:text-gray-400">
-            <tr>
-              <th scope="col" className="px-6 py-3 ">
-              </th>
-              <th colSpan={2} scope="col" className="text-xl font-black text-gray-900 text-center px-6 py-5">
-                {/* Regular Registration <br /> */}
-                {/* <span className="text-red-500">(02-26 July 2024)</span> */}
-              </th>
-              {/* <th colSpan={2} scope="col" className="text-xl font-black text-gray-900 text-center px-6 py-5">
-                Late Registration  <br />
-                <span className="text-red-500">(15-20 July 2024)</span>
-              </th> */}
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="border-b border-gray-200 ">
-              <th scope="row" className="px-6 py-4 font-medium text-gray-900  dark:text-white ">
-              </th>
-              <td className="text-xl font-black text-blue-700 px-6 py-4">
-                IEEE Members
-              </td>
-              <td className="text-xl font-black text-blue-700 px-6 py-4 bg-gray-200 ">
-                Non-IEEE Members
-              </td>
-              {/* <td className="text-xl font-black text-blue-700 px-6 py-4">
-                IEEE Members
-              </td>
-              <td className="text-xl font-black text-blue-700 px-6 py-4 bg-gray-200 ">
-                Non-IEEE Members
-              </td> */}
-            </tr>
-            <tr className="border-b border-gray-200 ">
-              <th scope="row" className="text-base font-black text-gray-900 px-6 py-4 font-medium text-gray-900  dark:text-white ">
-                Student (UG/ PG/ PhD)
-              </th>
-              <td className="text-base font-black text-gray-900 px-6 py-4">
-                $ 350
-              </td>
-              <td className="text-base font-black text-gray-900 px-6 py-4 bg-gray-200 ">
-                $ 450
-              </td>
-              {/* <td className="text-base font-black text-gray-900 px-6 py-4">
-                $ 230
-              </td>
-              <td className="text-base font-black text-gray-900 px-6 py-4 bg-gray-200 ">
-                $ 280
-              </td> */}
-            </tr>
-            <tr className="border-b border-gray-200 ">
-              <th scope="row" className="text-base font-black text-gray-900 px-6 py-4 font-medium text-gray-900  dark:text-white ">
-                Academician/ Industrial Professionals
-              </th>
-              <td className="text-base font-black text-gray-900 px-6 py-4">
-                $ 450
-              </td>
-              <td className="text-base font-black text-gray-900 px-6 py-4 bg-gray-200 ">
-                $ 550
-              </td>
-              {/* <td className="text-base font-black text-gray-900 px-6 py-4">
-                $ 330
-              </td>
-              <td className="text-base font-black text-gray-900 px-6 py-4 bg-gray-200 ">
-                $ 380
-              </td> */}
-            </tr>
-            <tr className="border-b border-gray-200 ">
-              <th scope="row" className="text-base font-black text-gray-900 px-6 py-4 font-medium text-gray-900  dark:text-white ">
-                Attendees
-              </th>
-              <td className="text-base font-black text-gray-900 px-6 py-4">
-                $ 250
-              </td>
-              <td className="text-base font-black text-gray-900 px-6 py-4 bg-gray-200 ">
-                $ 350
-              </td>
-              {/* <td className="text-base font-black text-gray-900 px-6 py-4">
-                $ 120
-              </td>
-              <td className="text-base font-black text-gray-900 px-6 py-4 bg-gray-200 ">
-                $ 170
-              </td> */}
-            </tr>
-            {/* <tr>
-              <th scope="row" className="text-base font-black text-gray-900 px-6 py-4 font-medium text-gray-900  dark:text-white ">
-                Professional Attendees
-              </th>
-              <td className="text-base font-black text-gray-900 px-6 py-4">
-                $ 150
-              </td>
-              <td className="text-base font-black text-gray-900 px-6 py-4 bg-gray-200 ">
-                $ 200
-              </td>
-              {/* <td className="text-base font-black text-gray-900 px-6 py-4">
-                $ 170
-              </td>
-              <td className="text-base font-black text-gray-900 px-6 py-4 bg-gray-200 ">
-                $ 220 
-              </td> }
-            </tr> */}
-          </tbody>
-        </table>
-      </div>
+export default function FeeTable() {
+  return (
+    <div className="space-y-12">
+      <div className="container mx-auto px-4 sm:px-6 py-8 bg-white shadow-lg rounded-2xl border border-gray-200">
+        <div className="flex items-center space-x-3 mb-6">
+          <h2 className="text-3xl font-extrabold text-blue-700">Registration Fee for Indian Delegates</h2>
+          <Image src={indian_flag} height={24} width={40} alt="Indian flag" />
         </div>
-    );
-};
+
+        <div className="overflow-x-auto">
+          <table className="w-full text-base text-left text-gray-700 border border-gray-300 rounded-xl overflow-hidden">
+            <thead className="bg-blue-100 text-gray-900">
+              <tr>
+                <th className="px-6 py-4">Category</th>
+                <th className="px-6 py-4 text-center">IEEE Members</th>
+                <th className="px-6 py-4 text-center">Non-IEEE Members</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                { category: 'Student (UG/PG/PhD)', ieee: '₹ 9,000', nonieee: '₹ 10,000' },
+                { category: 'Academicians / Industry Professionals', ieee: '₹ 10,000', nonieee: '₹ 11,000' },
+                { category: 'Attendees', ieee: '₹ 5,000', nonieee: '₹ 6,000' }
+              ].map((row, index) => (
+                <tr key={index} className={index % 2 === 0 ? 'bg-gray-50' : ''}>
+                  <td className="px-6 py-4 font-semibold">{row.category}</td>
+                  <td className="px-6 py-4 text-center text-blue-700 font-bold">{row.ieee}</td>
+                  <td className="px-6 py-4 text-center text-blue-700 font-bold">{row.nonieee}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div className="container mx-auto px-4 sm:px-6 py-8 bg-white shadow-lg rounded-2xl border border-gray-200">
+        <h2 className="text-3xl font-extrabold text-green-700 mb-6">Registration Fee for International Delegates</h2>
+
+        <div className="overflow-x-auto">
+          <table className="w-full text-base text-left text-gray-700 border border-gray-300 rounded-xl overflow-hidden">
+            <thead className="bg-green-100 text-gray-900">
+              <tr>
+                <th className="px-6 py-4">Category</th>
+                <th className="px-6 py-4 text-center">IEEE Members</th>
+                <th className="px-6 py-4 text-center">Non-IEEE Members</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                { category: 'Student (UG/PG/PhD)', ieee: '$350', nonieee: '$450' },
+                { category: 'Academicians / Industry Professionals', ieee: '$450', nonieee: '$550' },
+                { category: 'Attendees', ieee: '$250', nonieee: '$350' }
+              ].map((row, index) => (
+                <tr key={index} className={index % 2 === 0 ? 'bg-gray-50' : ''}>
+                  <td className="px-6 py-4 font-semibold">{row.category}</td>
+                  <td className="px-6 py-4 text-center text-green-700 font-bold">{row.ieee}</td>
+                  <td className="px-6 py-4 text-center text-green-700 font-bold">{row.nonieee}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  );}

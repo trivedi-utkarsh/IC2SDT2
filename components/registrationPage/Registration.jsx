@@ -1,53 +1,58 @@
 import { rules } from "./data";
 import { dates } from "./data";
-import indian_flag from 'assets/indian.png'
-import regis_from from 'assets/form.png'
+import indian_flag from 'assets/indian.png';
+import regis_from from 'assets/form.png';
 import Image from "next/image";
 
 import Fees from "./Fees";
 import FeeTable from "./FeeTable";
 
-//import ImportantDates from "./importantDates";
-
 export default function Submissions() {
   return (
-    <>
-      <div>
+    <div className="container mx-auto px-4 sm:px-8 py-10">
+      <h2 className="text-3xl font-extrabold mb-6 text-left text-blue-800">
+        Registration Procedure
+      </h2>
 
-        <div className="container mx-auto px-12 sm:px-6 py-4">
+      <div className="bg-gray-50 shadow-md rounded-xl p-6 space-y-5 text-gray-800 text-base leading-relaxed">
+        <ol className="list-decimal list-inside space-y-5">
 
-          <h4 className="text-2xl font-bold mt-8 text-center sm:text-left text-red-600">Registration Procedure:</h4><br />
-          <ol class="list-decimal list-inside">
-            <li>Pay the registration fee using the respective link as follows: <br />
-              <ul class="list-disc list-inside ml-10">
-                {/* <li>For Indian Delegates: <a class="font-medium text-blue-600 hover:underline" href="https://eazypay.icicibank.com/eazypayLink?P1=yyWoH6a5jVOW9AfoZEXS9w==" target="_blank">link</a></li> */}
-                <li>For Indian Delegates: Announce Soon...</li>
-                {/* <li>For International Delegates: <a class="font-medium text-blue-600 hover:underline" href="https://rzp.io/l/vOTQuQqKgr" target="_blank">link</a></li> */}
-                <li>For International Delegates: Announce Soon...</li>
-              </ul >
-            and take a snapshot of the payment details, which will be required to upload in registration form.
-            </li> 
-            {/* <li>Fill the <a class="font-medium text-blue-600 hover:underline" href="https://forms.gle/kp8UDxa5HCMfjY7j7" target="_blank">registration form
-            </a>. */}
-            <li>Fill the Registration Form (to be announced soon).
-            <li>For accommodation pay fee here (to be announced soon) , take snapshot of payment details and fill the Accommodation Registration Form (to be announced soon).</li>
-              {/* <li>For accommodation pay fee <a class="font-medium text-blue-600 hover:underline" href="https://eazypay.icicibank.com/eazypayLink?P1=yyWoH6a5jVOW9AfoZEXS9w==" target="_blank"> here</a>, take snapshot of payment details and fill the <a class="font-medium text-blue-600 hover:underline" href="https://forms.gle/tWKJ1thddXFcJqxt7" target="_blank">Accommodation Registration Form.</a></li> */}
-              <li>**Accommodation will be provided inside the institute campus to the registered participants on FCFS basis, at the nominal rate of Rs 500 per day per person on a sharing basis. Each participant needs to register for accommodation by 26th July 2024.</li>
-            </li>
-          </ol>
+          <li>
+            <span className="font-bold text-gray-900">Payment Link of Registration Fee:</span>
+            <ul className="list-disc list-inside ml-5 mt-2 space-y-1">
+              <li>
+                <span className="text-gray-700">For Indian Delegates:</span> <span className="text-red-600 font-bold">Announcing Soon</span>
+              </li>
+              <li>
+                <span className="text-gray-700">For International Delegates:</span> <span className="text-red-600 font-bold">Announcing Soon</span>
+              </li>
+            </ul>
+            <p className="mt-2 text-gray-700">Ensure you save a screenshot of your payment confirmation for uploading during registration.</p>
+          </li>
 
-          {/* <a class="font-medium text-blue-600 hover:underline" href="https://forms.gle/tdZC8Eoohg739cGCA" target="_blank">
-          <div className="flex items-center space-x-4">
-            <h2 className="text-4xl font-bold my-8 text-center sm:text-left">Registration Form</h2>
-            <Image src={regis_from} height={48} width={48}/>
-            </div>
-          </a> */}
-        </div>
+          <li>
+            <span className="font-bold text-gray-900">Fill out the Registration Form:</span> <span className="text-red-600 font-bold">Announcing Soon</span>
+          </li>
 
-        <FeeTable />
-        <br />
-        <br />
+          <li>
+            <span className="font-bold text-gray-900">Accommodation Fee Payment & Form Submission:</span> <span className="text-red-600 font-bold">Announcing Soon</span>
+          </li>
+
+          <li>
+            <span className="font-bold text-gray-900">Accommodation Details:</span>
+            <p className="mt-2 text-gray-700">
+              On-campus accommodation will be provided on a <span className="font-semibold text-blue-700">first-come-first-serve (FCFS)</span> basis at a nominal rate of <span className="font-semibold text-blue-700">Rs. 500 per day per person (shared)</span>. Accommodation registration closes on <span className="font-semibold text-blue-700">26th July 2024</span>.
+            </p>
+          </li>
+
+        </ol>
       </div>
-    </>
-  );
-}
+
+      <div className="mt-10">
+        <FeeTable />
+      </div>
+
+      <br />
+      <br />
+    </div>
+  );}
