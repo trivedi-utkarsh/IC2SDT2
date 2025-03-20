@@ -41,7 +41,7 @@ export default function Submissions() {
           <li>
             <span className="font-bold text-gray-900">Accommodation Details:</span>
             <p className="mt-2 text-gray-700">
-              On-campus accommodation will be provided on a <span className="font-semibold text-blue-700">first-come-first-serve (FCFS)</span> basis at a nominal rate of <span className="font-semibold text-blue-700">Rs. 500 per day per person (shared)</span>. Accommodation registration closes on <span className="font-semibold text-blue-700">26th July 2024</span>.
+              On-campus accommodation will be provided on a <span className="font-semibold text-blue-700">first-come-first-serve (FCFS)</span> basis at a nominal rate of <span className="font-semibold text-blue-700">Rs. 500 per day per person (shared)</span>. Accommodation registration closes on <span className="font-semibold text-blue-700">15th December 2025</span>.
             </p>
           </li>
 
