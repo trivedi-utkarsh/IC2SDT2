@@ -1,7 +1,7 @@
 .speakers-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 2rem;
+    gap: 1px;
     padding: 0 4rem;
     justify-items: center;
   }
@@ -10,7 +10,7 @@
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     padding: 20px;
     height: 350px;
-    width: 200px;
+    width: 225px;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -61,7 +61,7 @@
     }
   
     .card-s {
-      width: 180px;
+      width: 195px;
       height: 330px;
     }
   }

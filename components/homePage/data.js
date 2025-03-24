@@ -17,7 +17,7 @@ export const dates = [
     },
     {
         category : "Conference Dates",
-        date :"26-28 December, 2025"
+        date :"04-06 December, 2025"
     },
 ]
 

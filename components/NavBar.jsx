@@ -2,6 +2,7 @@
 import Image from "next/image";
 import logo from "@/public/newnewlogo.png";
 import nirflogo from "@/public/nirflogo.png";
+import nitdlogo from "@/public/nitdelhilogo.svg.png";
 import nitdLogo from "@/public/nitdel-logo.jpg";
 import ieee from "@/public/ieee_logo.png";
 import Link from "next/link";
@@ -23,8 +24,8 @@ function NavRibbon({ open }) {
         { name: "Home", link: "/" },
         { name: "About", link: "/about" },
         { name: "Registration", link: "/registration" },
-        { name: "Submission", link: "/submissions" },
-        { name: "Tracks", link: "/tracks" },
+        { name: "Paper Submission", link: "/submissions" },
+        { name: "Call For Papers", link: "/tracks" },
         { name: "Speakers", link: "/speakers" },
         { name: "Committees", link: "/committees" },
         { name: "Supporter", link: "/sponsors" },
@@ -58,6 +59,9 @@ function ConferenceHeader({ open, setOpen }) {
                     <Image src={logo} alt="ICSCCAT-2024" width={180} height={60} className="w-auto h-12 md:h-16" />
                 </Link>
                 <div className="flex items-center space-x-4">
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                        <Image src={nitdlogo} alt="NITD" width={70} height={50} className="h-10 md:h-14 w-auto" />
+                    </a>
                     <a href="https://www.nirfindia.org/Rankings/2024/EngineeringRanking.html" target="_blank" rel="noopener noreferrer">
                         <Image src={nirflogo} alt="NIRF" width={70} height={50} className="h-10 md:h-14 w-auto" />
                     </a>

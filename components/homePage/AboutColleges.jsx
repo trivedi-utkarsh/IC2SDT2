@@ -10,13 +10,13 @@ export default function AboutColleges() {
         </h2>
         <div className="flex flex-col md:flex-row md:items-center md:space-x-16 space-y-10 md:space-y-0">
           <div className="flex flex-1 flex-col items-center text-center space-y-4">
-            <Image
+            {/* <Image
               src={nitdLongLogo}
               alt="National Institute of Technology Delhi Logo"
               quality={100}
               className="w-full max-w-xs md:max-w-md object-contain"
-            />
-            <p className="text-blue-700 font-bold uppercase text-xl md:text-2xl">
+            /> */}
+            <p className="text-blue-700 font-bold uppercase md:tex-xl">
               Department of Computer Science & Engineering
             </p>
             <p className="text-blue-700 font-bold uppercase text-xl md:text-2xl">
