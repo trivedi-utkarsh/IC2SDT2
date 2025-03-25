@@ -1,11 +1,10 @@
 import indian_flag from 'assets/indian.png';
 import Image from 'next/image';
 import globe_flag from 'assets/globe_flag.png';
-import { Info } from 'lucide-react'; // Importing an info icon
 
 export default function FeeTable() {
   return (
-    <div className="space-y-16 pb-24">
+    <div className="space-y-16 pb-24"> {/* pb-24 adds bottom space */}
       {/* Indian Delegates */}
       <div className="container mx-auto px-4 sm:px-6 py-10 bg-white shadow-xl rounded-2xl border border-gray-200">
         <div className="flex items-center space-x-4 mb-8">
@@ -24,9 +23,9 @@ export default function FeeTable() {
             </thead>
             <tbody>
               {[
-                { category: 'Student (UG/PG/Researcher)', ieee: '₹ 8,000', nonieee: '₹ 9,600' },
-                { category: 'Academicians / Industry Professionals', ieee: '₹ 10,000', nonieee: '₹ 12,000' },
-                { category: 'Attendees', ieee: '₹ 5,000', nonieee: '₹ 6,000' }
+                { category: 'Student (UG/PG/Researcher)', ieee: '₹ 9,440/-  (₹ 8000 + 18% GST)', nonieee: '₹ 11,328/-  (₹ 9600 + 18% GST)' },
+                { category: 'Academicians / Industry Professionals', ieee: '₹ 11,800/- (₹ 10,000 + 18% GST)', nonieee: '₹ 14,160/- (₹ 12,000 + 18% GST)' },
+                { category: 'Attendees', ieee: '₹ 5,900/- (₹ 5,000 + 18% GST)', nonieee: '₹ 7,080/- (₹ 6,000 + 18% GST)' }
               ].map((row, index) => (
                 <tr key={index} className={`hover:bg-blue-50 transition ${index % 2 === 0 ? 'bg-gray-50' : ''}`}>
                   <td className="px-6 py-4 font-semibold">{row.category}</td>
@@ -36,10 +35,6 @@ export default function FeeTable() {
               ))}
             </tbody>
           </table>
-          <div className="mt-4 flex items-center text-sm italic text-gray-600">
-            <Info className="w-4 h-4 mr-2 text-blue-500" />
-            Excluding GST and will be paid directly to the registrant.
-          </div>
         </div>
       </div>
 
@@ -61,9 +56,9 @@ export default function FeeTable() {
             </thead>
             <tbody>
               {[
-                { category: 'Student (UG/PG/Researcher)', ieee: '$350', nonieee: '$420' },
-                { category: 'Academicians / Industry Professionals', ieee: '$450', nonieee: '$540' },
-                { category: 'Attendees', ieee: '$250', nonieee: '$300' }
+                { category: 'Student (UG/PG/Researcher)', ieee: '$ 413/- ($ 350 + 18% GST)', nonieee: '$ 496/- ($ 420 + 18% GST)' },
+                { category: 'Academicians / Industry Professionals', ieee: '$ 531/- ($ 450 + 18% GST)', nonieee: '$ 638/- ($ 540 + 18% GST)' },
+                { category: 'Attendees', ieee: '$ 295/- ($ 250 + 18% GST)', nonieee: '$ 354/- ($ 300 + 18% GST)' }
               ].map((row, index) => (
                 <tr key={index} className={`hover:bg-green-50 transition ${index % 2 === 0 ? 'bg-gray-50' : ''}`}>
                   <td className="px-6 py-4 font-semibold">{row.category}</td>
@@ -73,10 +68,6 @@ export default function FeeTable() {
               ))}
             </tbody>
           </table>
-          <div className="mt-4 flex items-center text-sm italic text-gray-600">
-            <Info className="w-4 h-4 mr-2 text-green-500" />
-            Excluding taxes and will be paid directly to the registrant.
-          </div>
         </div>
       </div>
     </div>

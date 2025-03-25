@@ -7,14 +7,14 @@ export default function Submissions() {
       <div className="container mx-auto px-4 sm:px-8 py-10">
         <ImportantDates />
 
-        <div className="mt-16">
+        {/* <div className="mt-16">
           <h2 className="text-4xl font-extrabold mb-6 text-left text-blue-700">
             Camera-Ready Submission Instructions
           </h2>
           <div className="bg-white shadow-md rounded-2xl p-6 text-left">
             <p className="text-red-600 font-bold text-xl">Announcing Soon</p>
           </div>
-        </div>
+        </div> */}
 
         <div className="mt-16">
           <h2 className="text-4xl font-extrabold mb-8 text-left text-blue-700">
@@ -42,7 +42,7 @@ export default function Submissions() {
                   </a>.
                 </span>
               </li>
-              <li className="flex items-start">
+              {/* <li className="flex items-start">
                 <span className="text-blue-600 font-bold mr-2">➤</span>
                 <span>
                   Authors should submit their original unpublished work in PDF format
@@ -55,7 +55,7 @@ export default function Submissions() {
                     here
                   </a>.
                 </span>
-              </li>
+              </li> */}
             </ul>
           </section>
         </div>

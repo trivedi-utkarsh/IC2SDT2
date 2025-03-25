@@ -2,7 +2,7 @@
 import Image from "next/image";
 import logo from "@/public/newnewlogo.png";
 import nirflogo from "@/public/nirflogo.png";
-import nitdlogo from "@/public/nitdelhilogo.svg.png";
+import nitdlogo from "@/assets/nitdelhi.png";
 import nitdLogo from "@/public/nitdel-logo.jpg";
 import ieee from "@/public/ieee_logo.png";
 import Link from "next/link";
@@ -28,7 +28,7 @@ function NavRibbon({ open }) {
         { name: "Call For Papers", link: "/tracks" },
         { name: "Speakers", link: "/speakers" },
         { name: "Committees", link: "/committees" },
-        { name: "Supporter", link: "/sponsors" },
+        // { name: "Supporter", link: "/sponsors" },
     ];
 
     return (

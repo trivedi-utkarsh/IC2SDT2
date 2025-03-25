@@ -1,77 +1,83 @@
-import Image from "next/image";
-import { motion } from "framer-motion";
+import Image from "next/image"
+import CollegeTabs from "@/components/aboutPage/CollegeTabs";
 
-export default function AboutNITD({ college }) {
-  return (
-    <section id="about-nitd" className="py-20 px-4 bg-gradient-to-b from-white to-blue-50">
-      <div className="max-w-7xl mx-auto space-y-24">
+export default function AboutNITD({ college, nitdActive, setNitdActive }) {
+    return (
+        <>
+            <section id="about" className=" flex flex-col">
+                {/*<CollegeTabs nitdActive={nitdActive} setNitdActive={setNitdActive} />*/}
+                <div className="flex flex-col justify-center md:flex-col mt-4 mx-auto">
+                    <h3 className="text-3xl px-6 pt-4 font-bold text-center md:text-4xl">
+                        {college.heading1}
+                    </h3>
+                    {/* <div className="bg-primary10 py-3 mt-10">
+                        <p className="text-justify px-6 mx-auto text-black lg:text-lg">
+                            {college.text1}
+                        </p>
+                    </div> */}
+                    <div>
+                        <div className="grid md:grid-cols-2 ">
+                            <div><p className="text-justify flex-1 px-6 text-black py-6 lg:text-lg">
+                                {college.text1} <br />
+                                {college.text2} <br />
+                                {college.text3} <br />
+                            </p>
+                            </div>
+                            <div className="flex-1 p-8">
+                                <Image src={college.image2} className="object-cover h-5/6" />
+                            </div>
 
-        {/* Block with image + overlapping text */}
-        <motion.div
-          className="relative flex flex-col md:flex-row items-center md:items-stretch gap-10"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <div className="md:w-3/5 overflow-hidden rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-700">
-            <Image
-              src={college.image1}
-              alt="NIT Delhi"
-              width={900}
-              height={600}
-              className="object-cover w-full h-full"
-            />
-          </div>
-          <motion.div
-            className="md:w-2/5 bg-white/90 backdrop-blur-sm shadow-2xl rounded-3xl p-8 md:-ml-16 z-10"
-            whileHover={{ scale: 1.02 }}
-            transition={{ duration: 0.5 }}
-          >
-            <h3 className="text-4xl md:text-5xl font-bold text-blue-700 mb-6">{college.heading1}</h3>
-            <p className="text-gray-700 text-lg leading-8 mb-4">{college.text1}</p>
-            <p className="text-gray-700 text-lg leading-8 mb-4">{college.text2}</p>
-            <p className="text-gray-700 text-lg leading-8">{college.text3}</p>
-          </motion.div>
-        </motion.div>
+                        </div>
+                    </div>
+                    <div className="bg-primary10">
+                    <h3 className="text-3xl px-6 pt-4 font-bold text-center md:text-4xl my-4">
+                        {college.heading2}
+                    </h3>
+                        <div className="grid  md:grid-cols-2">
+                            <div className="flex-1  p-8 rounded-2xl">
+                                <Image src={college.image1} className="object-cover" />
+                            </div>
+                            <div className="flex-1">
+                                <p className="text-justify p-14 py-6 text-black lg:text-lg">
+                                    {college.text4}
+                                    <ul>
+                                        {college.bullets && college.bullets.map(function (ele, idx) {
+                                            return <li className="list-disc ml-12 text-lg my-2">{ele}</li>
+                                        })}
+                                    </ul><br />
+                                    {college.text5}
+                                </p></div>
 
-        {/* Divider */}
-        <div className="w-24 h-1 mx-auto bg-blue-500 rounded-full"></div>
 
-        {/* Second block with alternating layout */}
-        <motion.div
-          className="relative flex flex-col md:flex-row-reverse items-center md:items-stretch gap-10"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <div className="md:w-3/5 overflow-hidden rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-700">
-            <Image
-              src={college.image2}
-              alt="NIT Campus"
-              width={900}
-              height={600}
-              className="object-cover w-full h-full"
-            />
-          </div>
-          <motion.div
-            className="md:w-2/5 bg-white/90 backdrop-blur-sm shadow-2xl rounded-3xl p-8 md:-mr-16 z-10"
-            whileHover={{ scale: 1.02 }}
-            transition={{ duration: 0.5 }}
-          >
-            <h3 className="text-4xl md:text-5xl font-bold text-blue-700 mb-6">{college.heading2}</h3>
-            <p className="text-gray-700 text-lg leading-8 mb-4">{college.text4}</p>
-            <ul className="list-disc ml-8 mb-4 text-gray-800 text-base leading-relaxed space-y-2">
-              {college.bullets &&
-                college.bullets.map((ele, idx) => (
-                  <li key={idx}>{ele}</li>
-                ))}
-            </ul>
-            <p className="text-gray-700 text-lg leading-8">{college.text5}</p>
-          </motion.div>
-        </motion.div>
-      </div>
-    </section>
-  );
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </section>
+            {/* <section id="about">
+
+                <div className="flex flex-col md:flex-col mt-4  mx-auto">
+                    <h3 className="text-2xl px-6 font-bold text-center md:text-3xl">
+                        {college.heading2}
+                    </h3>
+                    <div className=" py-3 px-6 mb-4 mt-10">
+                        <p className="text-justify px-6  mx-auto text-black lg:text-lg">
+                            {college.text4}
+                        </p><br />
+                        <ul>
+                            {college.bullets && college.bullets.map(function(ele,idx){
+                                return <li className="list-disc ml-12 text-lg my-2">{ele}</li>
+                            })}
+                        </ul><br />
+                        <p className="text-justify px-6  mx-auto text-black lg:text-lg">
+                            {college.text5}
+                        </p>
+                    </div>
+                </div>
+            </section> */}
+        </>
+
+    )
 }
