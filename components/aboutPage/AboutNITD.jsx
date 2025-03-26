@@ -1,8 +1,35 @@
 import Image from "next/image"
-import CollegeTabs from "@/components/aboutPage/CollegeTabs";
+import ImageSlider from "components/previouseditionPage/slider.jsx";
+
+const about1 = [
+    "/sliderimages/about/slide1.png",
+    "/sliderimages/about/Picture1.png",
+    "/sliderimages/about/Picture3.png",
+    "/sliderimages/about/Picture4.png",
+    "/sliderimages/about/Picture5.png",
+    "/sliderimages/about/Picture6.png",
+    "/sliderimages/about/Picture7.png",
+    "/sliderimages/about/slide2.jpg",
+    "/sliderimages/about/slide3.jpg",
+  ];
+  
+  const about2 = [
+    "/sliderimages/about/slide4.jpg",
+    "/sliderimages/about/slide5.jpg",
+    "/sliderimages/about/slide6.jpg",
+    "/sliderimages/about/Picture9.png",
+    "/sliderimages/about/Picture10.png",
+    "/sliderimages/about/Picture11.png",
+    "/sliderimages/about/Picture12.png",
+    "/sliderimages/about/Picture13.png",
+    "/sliderimages/about/Picture14.png",
+    "/sliderimages/about/Picture15.png",
+  ];
+  
 
 export default function AboutNITD({ college, nitdActive, setNitdActive }) {
     return (
+        
         <>
             <section id="about" className=" flex flex-col">
                 {/*<CollegeTabs nitdActive={nitdActive} setNitdActive={setNitdActive} />*/}
@@ -24,7 +51,7 @@ export default function AboutNITD({ college, nitdActive, setNitdActive }) {
                             </p>
                             </div>
                             <div className="flex-1 p-8">
-                                <Image src={college.image2} className="object-cover h-5/6" />
+                                <ImageSlider images={about1} className="object-cover h-5/6" />
                             </div>
 
                         </div>
@@ -35,7 +62,7 @@ export default function AboutNITD({ college, nitdActive, setNitdActive }) {
                     </h3>
                         <div className="grid  md:grid-cols-2">
                             <div className="flex-1  p-8 rounded-2xl">
-                                <Image src={college.image1} className="object-cover" />
+                                <ImageSlider images={about2} className="object-cover h-5/6" />
                             </div>
                             <div className="flex-1">
                                 <p className="text-justify p-14 py-6 text-black lg:text-lg">
