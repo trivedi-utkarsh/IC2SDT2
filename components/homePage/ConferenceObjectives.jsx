@@ -30,7 +30,7 @@ export default function ConferenceObjectives() {
 
     return (
         <section id="objectives" className="bg-primary10 py-6">
-            <div className="flex flex-col space-y-6 container mx-auto my-8 px-6 space-y-12 md:grid-cols-2">
+            <div className="flex flex-col container mx-auto my-8 px-6 space-y-12 md:grid-cols-2">
                 <h4 className=" max-w-md text-4xl font-bold text-center md:text-4xl md:text-left">Conference
                     Objectives</h4>
                 <div className="grid grid-cols-1 gap-12 pt-6 md:grid-cols-2 ">
@@ -47,7 +47,7 @@ export default function ConferenceObjectives() {
         </section>
     )
 }
-
+ 
 function ConferenceObjectiveGridItem({heading, body, index}) {
     return (
         <div className="flex flex-col md:flex-row md:space-y-0 space-y-3 md:space-x-6">

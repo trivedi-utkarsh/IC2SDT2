@@ -45,10 +45,10 @@ export default function Submissions() {
               <li className="flex items-start">
                 <span className="text-blue-600 font-bold mr-2">➤</span>
                 <span>
-                  Authors should submit their original unpublished work in PDF format
+                  Authors should submit their original unpublished work in Latex-generated PDF
                   <a
                     className="font-semibold text-blue-600 hover:underline ml-1"
-                    href="https://cmt3.research.microsoft.com/IC2SDT2025"
+                    href="https://www.overleaf.com/latex/templates/ieee-conference-template/grfzhhncsfqn"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

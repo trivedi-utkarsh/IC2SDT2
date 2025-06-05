@@ -11,14 +11,14 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 
-import bg6 from "@/public/banners/4.png";
-import bg1 from "@/public/banners/6.png";
-import bg2 from "@/public/banners/7.png";
-import bg3 from "@/public/banners/8.png";
-import bg4 from "@/public/banners/9.png";
-import bg5 from "@/public/banners/10.png";
+import bg6 from "@/public/banner/6.png";
+import bg1 from "@/public/banner/1.png";
+import bg2 from "@/public/banner/2.png";
+import bg3 from "@/public/banner/3.png";
+import bg4 from "@/public/banner/4.png";
+import bg5 from "@/public/banner/5.png";
 
-const sliderImages = [bg6, bg1, bg2, bg3, bg4, bg5];
+const sliderImages = [bg1, bg2, bg3, bg4, bg5, bg6];
 
 export default function HeroSection() {
     return (

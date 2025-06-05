@@ -60,6 +60,9 @@ function ConferenceHeader({ open, setOpen }) {
                 </Link>
                 <div className="flex items-center space-x-4">
                     <a href="" target="_blank" rel="noopener noreferrer">
+                        <Image src="/ieee_logo.png" alt="IEEE" width={70} height={50} className="h-10 md:h-14 w-auto" />
+                    </a>
+                    <a href="" target="_blank" rel="noopener noreferrer">
                         <Image src={nitdlogo} alt="NITD" width={70} height={50} className="h-10 md:h-14 w-auto" />
                     </a>
                     <a href="https://www.nirfindia.org/Rankings/2024/EngineeringRanking.html" target="_blank" rel="noopener noreferrer">
