@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import logo from "@/public/newnewlogo.png";
+import logo from "@/public/ic2sdtlogo.png";
 import nirflogo from "@/public/nirflogo.png";
 import nitdlogo from "@/assets/nitdelhi.png";
 import nitdLogo from "@/public/nitdel-logo.jpg";
@@ -56,7 +56,7 @@ function ConferenceHeader({ open, setOpen }) {
         <div className="container mx-auto py-2 px-4 md:px-0">
             <div className="flex items-center justify-between">
                 <Link href="/" className="flex items-center space-x-4">
-                    <Image src={logo} alt="ICSCCAT-2024" width={180} height={60} className="w-auto h-12 md:h-16" />
+                    <Image src="/logonewlogo.png" alt="ICSCCAT-2024" width={180} height={80} className="w-auto h-12 md:h-16" />
                 </Link>
                 <div className="flex items-center space-x-4">
                     <a href="" target="_blank" rel="noopener noreferrer">

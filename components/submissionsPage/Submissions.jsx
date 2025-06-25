@@ -33,7 +33,7 @@ export default function Submissions() {
                 <span>
                   Submission should strictly follow the recommended IEEE conference template, which can be found
                   <a
-                    className="font-semibold text-blue-600 hover:underline ml-1"
+                    className="font-semibold text-red-600 hover:underline ml-1"
                     href="https://www.ieee.org/conferences/publishing/templates.html"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -45,10 +45,18 @@ export default function Submissions() {
               <li className="flex items-start">
                 <span className="text-blue-600 font-bold mr-2">➤</span>
                 <span>
-                  Authors should submit their original unpublished work in Latex-generated PDF
+                  Authors should submit their original unpublished work in 
                   <a
-                    className="font-semibold text-blue-600 hover:underline ml-1"
+                    className="text-blue-600 hover:underline ml-1"
                     href="https://www.overleaf.com/latex/templates/ieee-conference-template/grfzhhncsfqn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Latex-generated PDF
+                  </a>
+                  <a
+                    className="font-semibold text-red-600 hover:underline ml-1"
+                    href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FIC2SDT2025"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
