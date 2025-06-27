@@ -2,7 +2,7 @@ import { dates } from "./data";
 
 export default function ImportantDates() {
   return (
-    <div className="container mx-auto px-4 sm:px-8 py-10">
+    <div className="flex flex-col justify-center items-center container mx-auto px-4 sm:px-8 py-10">
       <h3 className="text-3xl font-bold text-left text-blue-700 mb-8">
         Important Dates
       </h3>

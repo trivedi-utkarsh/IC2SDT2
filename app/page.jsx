@@ -6,6 +6,7 @@ import AboutColleges from "@/components/homePage/AboutColleges";
 import SponsorsSection from "@/components/homePage/sponsors";
 import Howtoreach from "@/components/delhi.jsx"
 import PosterPopup from "@/components/homePage/PosterPopup";
+import CountdownTimer from "@/components/homePage/timer";
 
 export default function Home() {
     return (
@@ -13,6 +14,7 @@ export default function Home() {
             <PosterPopup imageUrl="/poster.png" />
 
             <HeroSection/>
+            <CountdownTimer/>
             <AboutColleges/>
             <AboutConference/>
             <Howtoreach/>

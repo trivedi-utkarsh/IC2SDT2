@@ -6,9 +6,11 @@ export async function GET() {
   await connectDB();
 
   let doc = await Visitor.findOne();
+  console.log("Visitor count document:", doc);
   if (!doc) {
     doc = await Visitor.create({ count: 1 });
   } else {
+    console.log("Current visitor count:", doc.count);
     doc.count += 1;
     await doc.save();
   }
