@@ -41,7 +41,7 @@ export default function ImportantDates() {
                       </time>
                     )}
                     <time className="block mb-2 text-sm leading-none text-primaryRegular font-bold ">
-                      {date.date}
+                      {date.date} <span className="text-red-500">{date.last}</span>
                     </time>
                   </div>
                 </div>

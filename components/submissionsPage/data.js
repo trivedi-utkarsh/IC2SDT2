@@ -1,23 +1,28 @@
 export const dates = [
     {
         category : "Full paper Submission",
-        date :"30 August, 2025"
+        date :"30 August, 2025",
+        last :"(last date)"
     },
     {
         category : "Acceptance Notification",
-        date :"30 October, 2025"
+        date :"30 October, 2025",
+        last :"(last date)"
     },
     {
         category : "Camera Ready Manuscript",
-        date :"15 November, 2025"
+        date :"15 November, 2025",
+        last :"(last date)"
     },
     {
         category : "Conference Registration",
-        date :"25 November, 2025"
+        date :"25 November, 2025",
+        last :"(last date)"
     },
     {
         category : "Conference Dates",
-        date :"04-06 December, 2025"
+        date :"04-06 December, 2025",
+        last :""
     },
 ]
 

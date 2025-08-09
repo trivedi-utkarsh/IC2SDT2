@@ -20,7 +20,7 @@ export default function Submissions() {
           <h2 className="text-4xl font-extrabold mb-8 text-left text-blue-700">
             Submission Rules
           </h2>
-          <section className="bg-white shadow-md rounded-2xl p-8 space-y-6 text-gray-800 text-lg">
+          <section className="">
             <ul className="space-y-4 list-none">
               {rules.map((rule, idx) => (
                 <li key={idx} className="flex items-start">
@@ -42,18 +42,20 @@ export default function Submissions() {
                   </a>.
                 </span>
               </li>
+            </ul>
+          </section>
+        </div>
+
+        <div className="mt-16">
+          <h2 className="text-4xl font-extrabold mb-8 text-left text-blue-700">
+            Submission Link
+          </h2>
+          <section className="">
+            <ul className="space-y-4 list-none">
               <li className="flex items-start">
                 <span className="text-blue-600 font-bold mr-2">➤</span>
                 <span>
-                  Authors should submit their original unpublished work in 
-                  <a
-                    className="text-blue-600 hover:underline ml-1"
-                    href="https://www.overleaf.com/latex/templates/ieee-conference-template/grfzhhncsfqn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Latex-generated PDF
-                  </a>
+                  Authors should submit their original unpublished work
                   <a
                     className="font-semibold text-red-600 hover:underline ml-1"
                     href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FIC2SDT2025"
@@ -110,7 +112,7 @@ function ImportantDates() {
                   </time>
                 )}
                 <time className="text-sm text-green-600 font-bold">
-                  {date.date}
+                  {date.date} <span className="text-red-500">{date.last}</span>
                 </time>
               </div>
             </div>
@@ -118,4 +120,5 @@ function ImportantDates() {
         ))}
       </ol>
     </div>
-  );}
+  );
+}

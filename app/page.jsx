@@ -7,7 +7,7 @@ import SponsorsSection from "@/components/homePage/sponsors";
 import Howtoreach from "@/components/delhi.jsx"
 import PosterPopup from "@/components/homePage/PosterPopup";
 import CountdownTimer from "@/components/homePage/timer";
-
+import HeadlineScroller from "@/components/homePage/Heading";
 export default function Home() {
     return (
         <>

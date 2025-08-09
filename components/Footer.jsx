@@ -1,17 +1,28 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { MdEmail } from "react-icons/md";
 
 export default function Footer() {
   const [count, setCount] = useState(null);
   const [timeLeft, setTimeLeft] = useState({ months: 0, days: 0, hours: 0 });
 
-  useEffect(() => {
+  useEffect(() => {  
     // Fetch visitor count
-    fetch('/api/visitor')
+    // Track and show visitor count using CounterAPI V2
+    // Update and get the visitor count
+    fetch('https://api.counterapi.dev/v2/ic2sdt-nit-delhi/visitors-nit-delhi/up')
+      .then(() => {
+        // 2. Get updated count
+        return fetch('https://api.counterapi.dev/v2/ic2sdt-nit-delhi/visitors-nit-delhi');
+      })
       .then((res) => res.json())
-      .then((data) => setCount(data.count))
-      .catch((err) => console.error(err));
+      .then((data) => {
+        setCount(data.data.up_count); // or .down_count based on usage
+      })
+      .catch((err) => {
+        console.error("Visitor Count Error:", err);
+      });
 
     // Countdown logic
     const target = new Date('2025-12-04T00:00:00');
@@ -88,16 +99,36 @@ export default function Footer() {
         {/* Contact Us */}
         <div className="flex space-x-4 mr-20">
           <div className="text-gray-400">
-            <svg className="w-6 h-6 mt-1" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M11 10c-1 1-1 2-2 2s-2-1-3-2-2-2-2-3 1-1 2-2-2-4-3-4-3 3-3 3c0 2 2.055 6.055 4 8s6 4 8 4c0 0 3-2 3-3s-3-4-4-3z" />
+            <svg className="w-6 h-6 mt-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M2.25 4.5A2.25 2.25 0 0 1 4.5 2.25h15a2.25 2.25 0 0 1 2.25 2.25v15a2.25 2.25 0 0 1-2.25 2.25h-15A2.25 2.25 0 0 1 2.25 19.5v-15Zm1.5 0v.638l8.25 6.188 8.25-6.188V4.5h-16.5Zm0 2.872V19.5h16.5V7.372l-8.094 6.069a.75.75 0 0 1-.906 0L3.75 7.372Z" />
             </svg>
           </div>
-          <div className="flex flex-col ml-6">
+          <div className="flex flex-col gap-2 ml-6">
             <h3 className="text-2xl font-semibold">Contact Us</h3>
-            <p><a href="mailto:amandeepk@nitdelhi.ac.in" className="text-blue-500">Dr. Amandeep</a></p>
-            <p><a href="mailto:gunjan.rehani@nitdelhi.ac.in" className="text-blue-500">Dr. Gunjan</a></p>
-            <p><a href="mailto:gautam@nitdelhi.ac.in" className="text-blue-500">Dr. Gautam</a></p>
-            <p><a href="mailto:sahil.neelam@nitdelhi.ac.in" className="text-blue-500">Dr. Sahil</a></p>
+            <p className="flex items-center gap-2">
+              Dr. Amandeep {" "}
+              <a href="mailto:amandeepk@nitdelhi.ac.in" className="text-blue-400 hover:text-blue-600">
+                <MdEmail className="inline w-5 h-5 text-gray-400 hover:text-blue-400" />
+              </a>
+            </p>
+            <p className="flex items-center gap-2">
+              Dr. Gunjan {" "}
+              <a href="mailto:gunjan.rehani@nitdelhi.ac.in" className="text-blue-400 hover:text-blue-600">
+                <MdEmail className="inline w-5 h-5 text-gray-400 hover:text-blue-400" />
+              </a>
+            </p>
+            <p className="flex items-center gap-2">
+              Dr. Gautam {" "}
+              <a href="mailto:gautam@nitdelhi.ac.in" className="text-blue-400 hover:text-blue-600">
+                <MdEmail className="inline w-5 h-5 text-gray-400 hover:text-blue-400" />
+              </a>
+            </p>
+            <p className="flex items-center gap-2">
+              Dr. Sahil {" "}
+              <a href="mailto:sahil.neelam@nitdelhi.ac.in" className="text-blue-400 hover:text-blue-600">
+                <MdEmail className="inline w-5 h-5 text-gray-400 hover:text-blue-400" />
+              </a>
+            </p>
           </div>
         </div>
 

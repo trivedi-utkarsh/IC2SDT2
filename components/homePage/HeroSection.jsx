@@ -7,6 +7,7 @@ import { Autoplay, Pagination, EffectCreative } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-creative';
+import HeadlineScroller from "@/components/homePage/Heading";
 
 import ImportantDates from "./ImportantDates";
 
@@ -22,7 +23,11 @@ const sliderImages = [bg7, bg1, bg2, bg3, bg4, bg5, bg6];
 
 export default function HeroSection() {
     const swiperRef = useRef(null);
-    
+
+    const headlines = [
+        "🚨 Paper Submission Link : Paper Submission Closes on 30th August 2005.",
+    ];
+
     return (
         <>
             <section className="relative w-full h-auto">
@@ -84,6 +89,7 @@ export default function HeroSection() {
                 {/* Pagination dots */}
                 <div className="swiper-pagination !bottom-4 !text-white" />
             </section>
+            <HeadlineScroller headlines={headlines} />
             <ImportantDates />
         </>
     );
