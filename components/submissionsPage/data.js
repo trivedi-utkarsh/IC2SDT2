@@ -1,8 +1,9 @@
 export const dates = [
     {
         category : "Full paper Submission",
-        date :"30 August, 2025",
-        last :"(last date)"
+        olddate : "30 August, 2025",
+        date :"30 September, 2025",
+        last :"(extended last date)"
     },
     {
         category : "Acceptance Notification",

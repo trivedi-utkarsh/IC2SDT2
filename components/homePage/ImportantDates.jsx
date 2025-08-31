@@ -2,13 +2,14 @@ import { dates } from "./data";
 
 export default function ImportantDates() {
   return (
-    <div className="flex flex-col justify-center items-center container mx-auto px-4 sm:px-8 py-10">
+    <div className="container mx-auto px-4 sm:px-8 py-10 bg-gray-50 rounded-2xl shadow-md">
       <h3 className="text-3xl font-bold text-left text-blue-700 mb-8">
         Important Dates
       </h3>
       <ol className="sm:flex items-start space-y-8 sm:space-y-0 sm:space-x-10">
         {dates.map((date, idx) => (
           <li key={idx} className="relative">
+            {/* Stepper Circle + Line */}
             <div className="flex items-center mb-4">
               <div className="z-10 w-8 h-8 bg-blue-600 text-white flex items-center justify-center rounded-full shadow-md">
                 <svg
@@ -20,25 +21,39 @@ export default function ImportantDates() {
                 >
                   <path
                     fillRule="evenodd"
-                    d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                    d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 
+                      2v10a2 2 0 002 2h12a2 2 0 
+                      002-2V6a2 2 0 00-2-2h-1V3a1 
+                      1 0 10-2 0v1H7V3a1 1 0 
+                      00-1-1zm0 5a1 1 0 000 2h8a1 
+                      1 0 100-2H6z"
                     clipRule="evenodd"
                   />
                 </svg>
               </div>
               <div className="hidden sm:block w-full h-0.5 bg-gray-300 ml-2"></div>
             </div>
+
+            {/* Date Info */}
             <div>
               <h4 className="text-xl font-semibold text-gray-900 mb-2">
                 {date.category}
               </h4>
-              <div className="flex gap-2 flex-wrap">
-                {date.previousDate && (
-                  <time className="text-sm text-red-500 line-through font-medium">
-                    {date.previousDate}
+
+              <div className="flex gap-2 flex-wrap items-center">
+                {/* Old Date if exists */}
+                {date.olddate && (
+                  <time className="text-sm text-red-500 font-medium">
+                    <del>{date.olddate}</del>
                   </time>
                 )}
+
+                {/* New Date */}
                 <time className="text-sm text-green-600 font-bold">
-                  {date.date} <span className="text-red-500">{date.last}</span>
+                  {date.date}{" "}
+                  {date.last && (
+                    <span className="text-red-500">{date.last}</span>
+                  )}
                 </time>
               </div>
             </div>
